@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Encourage quotes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
+  <link href='https://fonts.googleapis.com/css?family=Cabin+Condensed:700' rel='stylesheet' type='text/css'>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+</head>
+<body>
+
+<section>
+    <img class="MainImg" src="./img/2f.png" alt="">
+</section>
+<section>
+    <div class="container">
+        <h1 id="text1"> ความหวังดีจากเพียงคลิกเดียว</h1>
+        <h1 id="text2"> ความหวังดีจากเพียงคลิกเดียว</h1>
+    </div>
+    <svg id="filters">
+        <defs>
+            <filter id="threshold">
+                <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0
+                                        0 1 0 0 0
+                                        0 0 1 0 0
+                                        0 0 0 185 -140" />
+            </filter>
+        </defs>
+    </svg>
+
+    <div class="Button-Container">
+        <input type="Button" id="Main-Button" value="สุ่มเลย" onclick="GetValue();" />
+    </div>
+</section>
+
+<!-- <button id="clickMe" class=".name" onclick="myFunction()">Click me</button> -->
+
+<script  src="./GetText.js"></script>  
+<script  src="./GetRandom.js"></script>
+</body>
+</html>

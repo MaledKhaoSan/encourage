@@ -1,0 +1,113 @@
+
+@import url("https://fonts.googleapis.com/css?family=Raleway:900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Chonburi&family=Mitr:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@200&display=swap');
+
+body {
+    /* margin: 0px; */
+    background-color: #ebf2fd;
+}
+
+
+.container {
+    position: relative;
+    width: 90%;
+    filter: url(#threshold) blur(0.6px);
+
+    /* margin: auto; */
+    top: 20%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    position: absolute;
+}
+
+
+.MainImg {
+    position: relative;
+    object-fit: scale-down;
+    width: 5%;
+    margin: 0 auto;
+    top: 16%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    position: absolute;
+}
+
+#text1,
+#text2 {
+    position: absolute;
+    width: 100%;
+    
+    display: inline-block;
+    font-family: 'Chonburi', cursive;
+    text-align: center;
+    user-select: none;
+
+    color: #000000;
+    letter-spacing: .1em;
+    line-height: auto;
+    font-size: 4vw;
+
+    background: linear-gradient(
+        to right, 
+        /* #6ccdfa,
+        #0be781 */
+        hsl(98 100% 62%), 
+        hsl(204 100% 59%)
+      );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+.Button-Container{
+    object-position: center;
+    position: relative;
+    display: block;
+
+    top: 65%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    position: absolute;
+}
+
+#Main-Button{
+    background-color:#000000;
+	border-radius:23px;
+	border:1px solid #000000;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family: 'Mitr', sans-serif;
+	font-size: 2em;
+    text-align: center;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2e3035;
+
+    padding: 0 3vh 0 3vh;
+}
+
+@media screen and (max-width: 600px){
+    .container {
+        position: relative;
+        width: 100%;
+        filter: url(#threshold) blur(0.6px);
+    
+        margin: 0 auto;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+        position: absolute;
+    }
+
+    .MainImg{
+        object-fit: scale-down;
+        width: 10%;
+    }
+    #text1,
+    #text2 {
+        letter-spacing: .1em;
+        text-size-adjust: auto;
+        font-size: 7vw;
+    }   
+  }
